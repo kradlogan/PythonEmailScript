@@ -14,6 +14,6 @@ Subject: SMTP email test
 This is the body.
 """
 
-s = smtplib.SMTP('KradsKaliBox.kradskalibox.net', 25)
+s = smtplib.SMTP('your.smtpserver.net', 25)
 s.sendmail(sender, receivers, message)
 s.quit()

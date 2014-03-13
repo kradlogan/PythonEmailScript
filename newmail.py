@@ -14,6 +14,6 @@ body=raw_input('Body: ')
 mymessage = "FROM: %s \nTO: %s\nMIME-Version: 1.0\nContent-type: text/html \nSUBJECT: %s\n%s" %(fromwho, towho, subject, body)
 
 print mymessage
-s = smtplib.SMTP('KradsKaliBox.kradskalibox.net', 25)
+s = smtplib.SMTP('a.smtpserver.net', 25)
 s.sendmail(sender, receivers, mymessage)
 s.quit()
